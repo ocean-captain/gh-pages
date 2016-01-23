@@ -35,3 +35,14 @@ git push origin gh-pages
 ## DONE 
 - [x] 怎么创建Project-Pages
 
+## DOING
+记录怎么使用jekyll创建静态网站页面
+
+`参考链接：` [Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/#troubleshooting)
+
+**貌似官网上说不管是uer pages 还是project pages页面发布后，github会处理jekyll语法的，不需要在本地安装jekyll。只是为了能在发布之前预览和调试页面，最好还是安装比较好。**
+
+- 更新ruby。最低得2.0.0`sudo apt-get install ruby2.0` (这时默认的还是原先的ruby版本，需要手动更改这个指向)
+
+- 安装bundler`gem install bundler`
+- 安装jekyll `$ gem install jekyll`
