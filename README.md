@@ -42,7 +42,16 @@ git push origin gh-pages
 
 **貌似官网上说不管是uer pages 还是project pages页面发布后，github会处理jekyll语法的，不需要在本地安装jekyll。只是为了能在发布之前预览和调试页面，最好还是安装比较好。**
 
-- 更新ruby。最低得2.0.0`sudo apt-get install ruby2.0` (这时默认的还是原先的ruby版本，需要手动更改这个指向)
+- 更新ruby。最低得2.0.0`sudo apt-get install ruby2.0` (这时默认的还是原先的ruby版本，需要手动更改这个指向[参考链接](http://group.cnblogs.com/topic/71243.html))
+
+> \curl -L https://get.rvm.io | bash -s stable 
+[参考链接](http://my.oschina.net/kelby/blog/193035)
+
+- 安装rvm
+
+> rvm requirements
+
+- 安装rubyGem
 
 - 安装bundler`gem install bundler`
 - 安装jekyll `$ gem install jekyll`
