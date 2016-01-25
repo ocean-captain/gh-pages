@@ -61,7 +61,7 @@ git push origin gh-pages
 
 - 安装github-pages或者Bundler 。这里有两套方案选择，参考 [Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/#troubleshooting)。我用的是直接安装github-pages，会将所以来的包统一安装上，包括jkeyll。
 
-    这里需要注意下，可能由于你的网络环境这一步执行不了报错：`ERROR:  While executing gem ...(Gem::RemoteFetcher::FetchError)    Errno::ECONNRESET: Connection reset by peer - SSL_connect (https://api.rubygems.org/quick/Marshal.4.8/github-pages-43.gemspec.rz)`原因是ruby 的gem被和谐了，现在淘宝的ruby工程师架设了rubygems的国内镜像。使用方法如下：
+    这里需要注意下，可能由于你的网络环境这一步执行不了报错，`参考链接：`[解决国内gem不能用的问题](http://www.haorooms.com/post/gem_not_use)`ERROR:  While executing gem ...(Gem::RemoteFetcher::FetchError)    Errno::ECONNRESET: Connection reset by peer - SSL_connect (https://api.rubygems.org/quick/Marshal.4.8/github-pages-43.gemspec.rz)`原因是ruby 的gem被和谐了，现在淘宝的ruby工程师架设了rubygems的国内镜像。使用方法如下：
     ```command
     $ gem sources --remove https://rubygems.org/
 $ gem sources -a https://ruby.taobao.org/
