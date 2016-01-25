@@ -33,10 +33,12 @@ git push origin gh-pages
 - [ ] 怎么通过jekyll创建静态网站页面。
 
 ## DONE 
-- [x] 怎么创建Project-Pages
+- [x] 本地搭建jekyll环境
+- [x] 初始化jekyll并上传到github
 
 ## DOING
-记录怎么使用jekyll创建静态网站页面
+
+### 1. 本地搭建jekyll环境
 
 `参考链接：` [Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/#troubleshooting)
 `参考链接：` [使用 GitHub, Jekyll 打造自己的独立博客](http://www.tuicool.com/articles/BVVBvu)
@@ -68,5 +70,32 @@ $ gem sources -a https://ruby.taobao.org/
 $ gem sources -l
 *** CURRENT SOURCES ***
 
-https://ruby.taobao.org```
+https://ruby.taobao.org
+```
 
+### 2. 初始化jekyll并上传到github
+
+- 在github上新建一个仓库。例如：blog-jekyll
+
+- 在本地，jekyll初始化一个同名的文件夹。
+
+> jekyll new blog-jekyll
+
+- 进入该文件夹，初始化git
+
+> cd blog-jekyll
+> git init
+
+- 新建gh-pages分支
+
+> git checkout --orphan gh-pages
+
+- 将远程服务器添加到本地仓库中。
+
+>  git remote add origin https://github.com/love-peach/blog-jekyll.git
+
+- 添加 提交 推送
+
+> git add -all
+> git commit -m "first post"
+>  git push origin gh-pages
