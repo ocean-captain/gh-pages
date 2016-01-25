@@ -43,7 +43,7 @@ git push origin gh-pages
 
 **貌似官网上说不管是uer pages 还是project pages页面发布后，github会处理jekyll语法的，不需要在本地安装jekyll。只是为了能在发布之前预览和调试页面，最好还是安装比较好。**
 
-- 更新ruby。推荐使用rvm安装ruby。所以先安装rvm。
+- 更新ruby。推荐使用rvm安装ruby。所以先安装rvm。[安装rvm出错处理方法](http://blog.csdn.net/caspiansea/article/details/47802331)
 
 > curl -L get.rvm.io | bash -s stable --ruby  
 
@@ -52,7 +52,6 @@ git push origin gh-pages
     gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
     然后执行gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3，
     然后再执行curl -L get.rvm.io | bash -s stable --ruby，
-    [安装rvm出错处理方法](http://blog.csdn.net/caspiansea/article/details/47802331)
 
 - 在 ~/.profile 或 ~/.bashrc文件中添加如下代码：
 
