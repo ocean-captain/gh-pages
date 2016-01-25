@@ -43,26 +43,26 @@ git push origin gh-pages
 
 **貌似官网上说不管是uer pages 还是project pages页面发布后，github会处理jekyll语法的，不需要在本地安装jekyll。只是为了能在发布之前预览和调试页面，最好还是安装比较好。**
 
-- 更新ruby。最低得2.0.0`sudo apt-get install ruby2.0` (这时默认的还是原先的ruby版本，需要手动更改这个指向[参考链接](http://group.cnblogs.com/topic/71243.html))
+- 更新ruby。推荐使用rvm安装ruby。所以先安装rvm。
 
-- 推荐使用rvm安装ruby。所以先安装rvm。
-> curl -L get.rvm.io | bash -s stable --ruby
+> curl -L get.rvm.io | bash -s stable --ruby  
 
-- 在安装rvm时，可能会报这样的错：public key not found（无法检查签名：找不到公钥），这时你的终端找到这句话：try downloading the signatures:
-
+    在安装rvm时，可能会报这样的错：public key not found（无法检查签名：找不到公钥），这时你的终端找到这句话：
+    try downloading the signatures:  
     gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+    然后执行gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3，
+    然后再执行curl -L get.rvm.io | bash -s stable --ruby，
+    [安装rvm出错处理方法](http://blog.csdn.net/caspiansea/article/details/47802331)
 
-然后执行gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3，然后再执行curl -L get.rvm.io | bash -s stable --ruby，安装完后会有这样的提示 * To start using RVM you need to run `source /home/shaozhenxing/.rvm/scripts/rvm` 执行它。然后ruby -v,gem -v 查看是否成功。[安装rvm出错处理方法](http://blog.csdn.net/caspiansea/article/details/47802331)
+- 在 ~/.profile 或 ~/.bashrc文件中添加如下代码：
+
+> [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 
-> \curl -L https://get.rvm.io | bash -s stable 
-[参考链接](http://my.oschina.net/kelby/blog/193035)
+- 安装bundler  
 
-- 安装rvm
+> gem install bundler
 
-> rvm requirements
+- 安装jekyll 
 
-- 安装rubyGem
-
-- 安装bundler`gem install bundler`
-- 安装jekyll `$ gem install jekyll`
+> $ gem install jekyll
