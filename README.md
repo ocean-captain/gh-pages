@@ -39,6 +39,7 @@ git push origin gh-pages
 记录怎么使用jekyll创建静态网站页面
 
 `参考链接：` [Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/#troubleshooting)
+`参考链接：` [使用 GitHub, Jekyll 打造自己的独立博客](http://www.tuicool.com/articles/BVVBvu)
 
 **貌似官网上说不管是uer pages 还是project pages页面发布后，github会处理jekyll语法的，不需要在本地安装jekyll。只是为了能在发布之前预览和调试页面，最好还是安装比较好。**
 
