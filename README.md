@@ -75,6 +75,8 @@ https://ruby.taobao.org
 
 ### 2. 初始化jekyll并上传到github
 
+`参考链接：` [搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
+
 - 在github上新建一个仓库。例如：blog-jekyll
 
 - 在本地，jekyll初始化一个同名的文件夹。
